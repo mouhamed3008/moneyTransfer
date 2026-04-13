@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Account extends Model
+{
+    //
+
+    protected $fillable = [
+        'numero_compte',
+        'solde',
+        'code',
+        'user_id',
+
+    ];
+}
