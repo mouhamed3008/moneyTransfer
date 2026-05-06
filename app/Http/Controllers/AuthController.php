@@ -34,23 +34,6 @@ class AuthController extends Controller
         } else {
             return response()->json(['message' => 'Invalid credentials'], 401);
         }
-
-
-
-        // if (auth()->attempt($credentials)) {
-        //     $user = auth()->user();
-        //     $token = $user->createToken('auth_token')->plainTextToken;
-
-        //     return response()->json([
-        //         'message' => 'Login successful',
-        //         'access_token' => $token,
-        //         'token_type' => 'Bearer',
-        //     ]);
-        // }
-
-        // return response()->json(['message' => 'Invalid credentials'], 401);
-
-
     }
 
     public function register(Request $request)

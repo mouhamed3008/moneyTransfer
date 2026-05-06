@@ -23,4 +23,5 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/transactions', [\App\Http\Controllers\TransactionController::class, 'index']);
+    Route::post('/transactions', [\App\Http\Controllers\TransactionController::class, 'transfert']);
 });
